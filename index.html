@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+</head>
+<style>
+    img {
+        display: block;
+    }
+
+    a {
+        font-size: 20px;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 120%;
+    }
+
+    nav {
+        overflow: hidden;
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a:hover{
+        background-color: #ddd;
+        color: black;
+    }
+
+    .container {
+        width: 60%;
+        margin: auto;
+        background-color: rgb(233, 231, 231);
+        padding: 25px;
+    }
+</style>
+
+<body>
+    <div class="container">
+    <center><h2>Experiment 5B: Problem Statement 2</h2></center>
+    <center><h3>Write a code in any programming language that can find an armstrong number from a given range</h3></center>
+
+    <section id="nav">
+        <nav>
+            <a href="#code">Code</a>
+            <a href="#result">Results</a>
+            <a href="#variables">Variables</a>
+            <a href="#complexity">Complexity</a>
+            <a href="#reference">Reference</a>
+        </nav>
+    </section>
+
+    <article id="code">
+        <h1>Code</h1>
+        <textarea id="w3review" name="w3review" rows="20" cols="60">
+        
+        #include <iostream>  
+        using namespace std;  
+        int main()  
+        {  
+            int n,r,sum=0,temp;    
+            cout<<"Enter the Number=  ";    
+            cin>>n;    
+            temp=n;    
+            while(n>0)    
+            {    
+                r=n%10;    
+                sum=sum+(r*r*r);    
+                n=n/10;    
+            }    
+            if(temp==sum)    
+                cout<<"Armstrong Number."<<endl;    
+            else    
+                cout<<"Not Armstrong Number."<<endl;   
+                return 0;  
+        } 
+        
+        </textarea>
+    </article>
+
+    
+
+    <section id="result">
+
+        <h1>Results</h1>
+        <h3>Sample Output 1</h3>
+        <img src="sample1.png" alt="input" height="100px" width="500px">
+
+        <h3>Sample Output 2</h3>
+        <img src="sample2.png" alt="output" height="100px" width="500px">
+    </section>
+
+    <section id="variables">
+        <h1>Variables Used</h1>
+        <ul>
+            <li>n: input number</li>
+            <li>r: reminder</li>
+            <li>sum: calculate sum</li>
+            <li>temp: store temporary value</li>
+        </ul>
+    </section>
+
+    <section id="complexity">
+        <h1>Complexity</h1>
+        <h3><i>O(log n)</i></h3>
+    </section>
+
+    <section id="reference">
+        
+        <h1>Refer:</h1>
+        <a style="font-size:100%; color:black" href="https://www.javatpoint.com/armstrong-number-in-cpp"><i>ArmStrong Number Information</i></a>
+        <h4>What is ArmStrong Numbers?</h4>
+        <aside><p>Armstrong number is a number that is equal to the sum of cubes of its digits. For example 0, 1, 153, 370, 371 and 407 are the Armstrong numbers.</p></aside>
+</section>
+
+    </div>
+
+
+    <footer style="text-align: center;">
+        Sayali Desai@2021
+    </footer>
+
+</body>
+</html>
